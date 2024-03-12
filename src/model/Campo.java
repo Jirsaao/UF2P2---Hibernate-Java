@@ -22,6 +22,9 @@ public class Campo {
 	@Column(name = "id", unique = true, nullable = true)
 	private int id_campo;
 
+	@Column(name = "nombre")
+    private String nombre;
+
 	@OneToMany
     @JoinColumn(name = "campo_id")
 	private List<Vid> vids;
@@ -39,7 +42,7 @@ public class Campo {
 
 	@Override
 	public String toString() {
-		return "Campo [id_campo=" + id_campo + ", vids=" + Arrays.toString(vids.toArray()) + ", bodega="
+		return "Campo [id_campo=" + id_campo + ", nombre=" + nombre + ", vids=" + Arrays.toString(vids.toArray()) + ", bodega="
 				+ bodega.toString() + "]";
 	}
 
