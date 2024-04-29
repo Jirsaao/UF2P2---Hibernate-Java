@@ -56,4 +56,14 @@ public class Campo {
 		vids.addAll(this.vids);
 		return vids;
 	}
+	public String getNombre() {
+        return this.nombre;
+    }
+	public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+	public int getId_campo() {
+        return this.id_campo;
+    }
+
 }
