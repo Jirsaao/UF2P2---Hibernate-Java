@@ -45,4 +45,10 @@ public class Bodega {
 		return this.vids;
 	}
 	
+	public String getNombre() {
+        return this.nombre;
+    }
+	public int getId_bodega() {
+        return this.id_bodega;
+    }
 }
